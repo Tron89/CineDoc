@@ -124,4 +124,16 @@ public class Cine {
 	    return false;
 	}
 	
+	/**
+	 * Devuelve una entrada, reduciendo en 1 el número de butacas ocupadas a menos que no haya butacas ocupadas
+	 * @return boolean - true si la devolución fue exitosa, false si no
+	 */
+	public boolean devolverEntrada() {
+	    if (butacasOcupadas > 0) {
+	        butacasOcupadas--;
+	        return true;
+	    }
+	    return false;
+	}
+	
 }
