@@ -1,0 +1,84 @@
+package CinePK;
+
+public class Cine {
+	
+	int aforo;
+	int butacasOcupadas;
+	double precioEntrada;
+	String tituloPelicula;
+	
+	/**
+	 * Constructor vacío,
+	 * valores predeterminados:
+	 * aforo de 100
+	 * 0 butacas ocupadas,
+	 * precio de entrada de 5 euros,
+	 * título de película "Sin determinar"
+	 */
+	public Cine() {
+	    this(100);
+	}
+
+	/**
+	 * Constructor con 1 parámetro,
+	 * valores predeterminados:
+	 * 0 butacas ocupadas,
+	 * precio de entrada de 5 euros,
+	 * título de película "Sin determinar"
+	 * @param aforo int
+	 */
+	public Cine(int aforo) {
+	    this(aforo, 5, "Sin determinar");
+	}
+
+
+	/**
+	 * Constructor con 3 parámetros,
+	 * valor predeterminado:
+	 * 0 butacas ocupadas
+	 * @param aforo int
+	 * @param precioEntrada double
+	 * @param tituloPelicula String
+	 */
+	public Cine(int aforo, double precioEntrada, String tituloPelicula) {
+	    super();
+	    this.aforo = aforo;
+	    this.precioEntrada = precioEntrada;
+	    this.tituloPelicula = tituloPelicula;
+	}
+
+	public int getAforo() {
+		return aforo;
+	}
+
+	public void setAforo(int aforo) {
+		this.aforo = aforo;
+	}
+
+	public int getButacasOcupadas() {
+		return butacasOcupadas;
+	}
+
+	public void setButacasOcupadas(int butacasOcupadas) {
+		this.butacasOcupadas = butacasOcupadas;
+	}
+
+	public double getPrecioEntrada() {
+		return precioEntrada;
+	}
+
+	public void setPrecioEntrada(double precioEntrada) {
+		this.precioEntrada = precioEntrada;
+	}
+
+	public String getTituloPelicula() {
+		return tituloPelicula;
+	}
+
+	public void setTituloPelicula(String tituloPelicula) {
+		this.tituloPelicula = tituloPelicula;
+	}
+	
+	
+	
+}
