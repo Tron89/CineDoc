@@ -112,5 +112,16 @@ public class Cine {
 	    butacasOcupadas = 0;
 	}
 	
+	/**
+	 * Vende una entrada incrementando en 1 el número de butacas ocupadas a menos que la sala este llena.
+	 * @return boolean - true si se ha vendido, false si no
+	 */
+	public boolean venderEntrada() {
+	    if (butacasOcupadas < aforo) {
+	        butacasOcupadas++;
+	        return true;
+	    }
+	    return false;
+	}
 	
 }
