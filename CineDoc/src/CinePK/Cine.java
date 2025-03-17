@@ -96,5 +96,21 @@ public class Cine {
 	    return (butacasOcupadas / (double) aforo) * 100;
 	}
 	
+	/**
+	 * Devuelve los ingresos totales de la sala.
+	 * Calculado como el número de butacas ocupadas por el precio de la entrada.
+	 * @return double - Ingresos totales
+	 */
+	public double ingresosSala() {
+	    return butacasOcupadas * precioEntrada;
+	}
+
+	/**
+	 * Vacía la sala, poniendo a cero las butacas ocupadas.
+	 */
+	public void vaciarSala() {
+	    butacasOcupadas = 0;
+	}
+	
 	
 }
