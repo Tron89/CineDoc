@@ -80,5 +80,21 @@ public class Cine {
 	}
 	
 	
+	/**
+	 * Devuelve el número de butacas libres en la sala.
+	 * @return int - Número de butacas libres
+	 */
+	public int butacasLibres() {
+	    return aforo - butacasOcupadas;
+	}
+
+	/**
+	 * Devuelve el porcentaje de ocupación de la sala.
+	 * @return double - Porcentaje de butacas ocupadas
+	 */
+	public double porcentajeOcupacion() {
+	    return (butacasOcupadas / (double) aforo) * 100;
+	}
+	
 	
 }
